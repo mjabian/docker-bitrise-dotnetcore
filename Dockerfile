@@ -34,5 +34,6 @@ RUN mkdir dotnettest \
     && rm -r dotnettest
 
 # Display info installed components
+WORKDIR /var/src/wkd
 RUN mono --version
 RUN dotnet --info
